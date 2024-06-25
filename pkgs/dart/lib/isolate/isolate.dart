@@ -11,4 +11,5 @@ void main() async {
   receivePort.listen((message) {
     print(message);
   });
+  // 程序一直在运行
 }
