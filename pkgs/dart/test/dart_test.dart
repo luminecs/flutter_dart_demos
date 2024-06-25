@@ -1,4 +1,4 @@
-import 'package:reflection/reflection.dart';
+import 'package:dart/dart.dart';
 import 'package:test/test.dart';
 
 void main() {
