@@ -1,3 +1,3 @@
 String demo() => """
-<h1 style='color: purple;'>Hello World</h1>
+<h1 class="test">Hello World</h1>
 """;
