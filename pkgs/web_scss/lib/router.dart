@@ -18,7 +18,7 @@ Router createRouter() {
     );
   });
 
-  router.get('/test1', (Request request) {
+  router.get('/test', (Request request) {
     return Response.ok(
       demo(),
       headers: {'content-type': 'text/html'},
