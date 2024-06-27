@@ -40,8 +40,9 @@ Future<HttpServer> createServer() async {
 }
 
 void compileSass() {
-  final result = sass.compile('sass/main.scss');
-  File('public/styles/main.css').writeAsStringSync(result);
+  // final result = sass.compile('sass/main.scss');
+  final result1 = sass.compileToResult('sass/main.scss');
+  File('public/styles/main.css').writeAsStringSync(result1.css);
   print('Sass compiled successfully.');
 }
 
