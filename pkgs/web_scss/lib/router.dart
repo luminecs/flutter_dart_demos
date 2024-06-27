@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:shelf/shelf.dart';
 import 'package:shelf_router/shelf_router.dart';
 import 'package:web_scss/template.dart';
-import 'package:web_scss/template/htmx/example.dart';
+import 'package:web_scss/template/example.dart';
 
 Router createRouter() {
   final router = Router();
@@ -26,14 +26,14 @@ Router createRouter() {
     );
   });
 
-  router.get('/htmx/example/click-to-edit', (Request request) {
+  router.get('/pages/a', (Request request) {
     return Response.ok(
       clickToEdit(),
       headers: {'content-type': 'text/html'},
     );
   });
 
-  router.get('/htmx/example/contact/1/edit', (Request request) {
+  router.get('/pages/b', (Request request) {
     return Response.ok(
       clickToEdit1(),
       headers: {'content-type': 'text/html'},

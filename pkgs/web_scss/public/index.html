@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Dart Shelf with Sass and Router</title>
   <link rel="stylesheet" href="/styles/main.css">
-  <link rel="stylesheet" href="/js/htmx@2.0.0.min.js">
+  <link rel="stylesheet" href="/styles/unpoly@3.8.0.min.css">
+  <script src="/js/unpoly@3.8.0.min.js"></script>
 </head>
 <body>
 <h1>Welcome to Dart Shelf with Sass and Router!</h1>
@@ -14,5 +15,15 @@
   <a href="/about">About</a>
 </nav>
 <div id="content"></div>
+
+<div class="story">
+  <p>Story summary</p>
+  <a href="/pages/a" up-target=".story">
+    Read full story
+  </a>
+</div>
+
+<p>This text won't change</p>
+
 </body>
 </html>
