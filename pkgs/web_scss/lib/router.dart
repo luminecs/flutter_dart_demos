@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:shelf/shelf.dart';
 import 'package:shelf_router/shelf_router.dart';
+import 'package:web_scss/template.dart';
 
 Router createRouter() {
   final router = Router();
@@ -17,6 +18,12 @@ Router createRouter() {
     );
   });
 
+  router.get('/test1', (Request request) {
+    return Response.ok(
+      demo(),
+      headers: {'content-type': 'text/html'},
+    );
+  });
 
   router.get('/about', (Request request) {
     return Response.ok('This is the about page.');
