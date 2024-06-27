@@ -1,4 +1,4 @@
-String clickToEdit() => """
+String pageA() => """
 <div class="story">
   <h1>Full story</h1>
   <p>Lorem ipsum dolor sit amet.</p>
@@ -8,7 +8,7 @@ String clickToEdit() => """
 </div>
 """;
 
-String clickToEdit1() => """
+String pageB() => """
 <div class="story">
   <p>Story summary</p>
   <a href="/pages/a" up-target=".story">

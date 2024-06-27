@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:shelf/shelf.dart';
-import 'package:shelf/shelf.dart' as shelf;
 
 extension ResponseHtml on Response {
   static Response ok(

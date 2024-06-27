@@ -14,10 +14,7 @@ Router createRouter() {
   });
 
   router.get('/index', (Request request) {
-    return Response.ok(
-      File('public/index.html').readAsStringSync(),
-      headers: {'content-type': 'text/html'},
-    );
+    return ResponseHtml.ok(File('public/index.html').readAsStringSync());
   });
 
   router.get('/test', (Request request) {
@@ -25,11 +22,11 @@ Router createRouter() {
   });
 
   router.get('/pages/a', (Request request) {
-    return ResponseHtml.ok(clickToEdit());
+    return ResponseHtml.ok(pageA());
   });
 
   router.get('/pages/b', (Request request) {
-    return ResponseHtml.ok(clickToEdit1());
+    return ResponseHtml.ok(pageB());
   });
 
   router.get('/about', (Request request) {
