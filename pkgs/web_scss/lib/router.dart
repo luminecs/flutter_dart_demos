@@ -5,6 +5,7 @@ import 'package:shelf_router/shelf_router.dart';
 import 'package:web_scss/extentions/response_ext.dart';
 import 'package:web_scss/template.dart';
 import 'package:web_scss/template/example.dart';
+import 'package:web_scss/template/up_emit.dart';
 
 Router createRouter() {
   final router = Router();
@@ -27,6 +28,10 @@ Router createRouter() {
 
   router.get('/pages/b', (Request request) {
     return ResponseHtml.ok(pageB());
+  });
+
+  router.get('/up-emit', (Request request) {
+    return ResponseHtml.ok(upEmit(), withDoctype: true);
   });
 
   router.get('/about', (Request request) {
