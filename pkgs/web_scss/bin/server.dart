@@ -4,7 +4,7 @@ import 'package:shelf/shelf_io.dart' as io;
 import 'package:shelf_hotreload/shelf_hotreload.dart';
 import 'package:shelf_static/shelf_static.dart';
 import 'package:sass/sass.dart' as sass;
-import '../lib/router.dart';
+import 'package:web_scss/router.dart';
 
 void main() async {
   // 编译Sass文件
