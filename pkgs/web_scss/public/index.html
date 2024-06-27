@@ -13,23 +13,5 @@
   <a href="/about">About</a>
 </nav>
 <div id="content"></div>
-<script>
-  // 简单的客户端路由
-  const content = document.getElementById('content');
-  const loadContent = async (path) => {
-    const response = await fetch(path);
-    content.textContent = await response.text();
-  };
-  document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const path = e.target.getAttribute('href');
-      history.pushState(null, '', path);
-      loadContent(path);
-    });
-  });
-  window.addEventListener('popstate', () => loadContent(location.pathname));
-  loadContent(location.pathname);
-</script>
 </body>
 </html>
