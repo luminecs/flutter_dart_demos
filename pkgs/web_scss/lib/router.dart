@@ -5,7 +5,8 @@ import 'package:shelf_router/shelf_router.dart';
 import 'package:web_scss/extentions/response_ext.dart';
 import 'package:web_scss/template.dart';
 import 'package:web_scss/template/example.dart';
-import 'package:web_scss/template/up_emit.dart';
+import 'package:web_scss/template/up_emit_html.dart';
+import 'package:web_scss/template/up_emit_js.dart';
 
 Router createRouter() {
   final router = Router();
@@ -30,8 +31,12 @@ Router createRouter() {
     return ResponseHtml.ok(pageB());
   });
 
-  router.get('/up-emit', (Request request) {
-    return ResponseHtml.ok(upEmit(), withDoctype: true);
+  router.get('/up-emit-html', (Request request) {
+    return ResponseHtml.ok(upEmitHtml(), withDoctype: true);
+  });
+
+  router.get('/up-emit-js', (Request request) {
+    return ResponseHtml.ok(upEmitJs(), withDoctype: true);
   });
 
   router.get('/about', (Request request) {
