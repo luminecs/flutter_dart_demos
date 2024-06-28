@@ -9,11 +9,8 @@ String upEmit() => """
 </head>
 <body>
   <h1>Unpoly up-emit Example</h1>
-  
   <a href="#" up-emit="custom-event">Click me to emit a custom event</a>
-  
   <div id="result"></div>
-
   <script>
     up.on('custom-event', function(event) {
       document.getElementById('result').textContent = 'Custom event was emitted at ' + new Date().toLocaleTimeString()
