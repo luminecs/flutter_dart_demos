@@ -12,8 +12,11 @@ String tachyonsPage() => """
   <link rel="stylesheet" href="/styles/tachyons5.min.css">
 </head>
 <body>
+
 <button type="button" class="pointer br2 ba b--black-20 bg-white pa2 ml1 mv1 bg-animate hover-bg-light-gray border-box">Default</button>
 <div class=''>aaa</div>
+<button class="bw0 br2 bg-blue-1 p2 px4 white fw1 tc ttu tracked">do what you love</button>
+
 </body>
 </html>
 """;
