@@ -5,6 +5,7 @@ import 'package:shelf_router/shelf_router.dart';
 import 'package:web_scss/extentions/response_ext.dart';
 import 'package:web_scss/template.dart';
 import 'package:web_scss/template/example.dart';
+import 'package:web_scss/template/tachyons_page.dart';
 import 'package:web_scss/template/up_emit_html.dart';
 import 'package:web_scss/template/up_emit_js.dart';
 
@@ -37,6 +38,10 @@ Router createRouter() {
 
   router.get('/up-emit-js', (Request request) {
     return ResponseHtml.ok(upEmitJs(), withDoctype: true);
+  });
+  
+  router.get('/tachyons', (Request request) {
+    return ResponseHtml.ok(tachyonsPage(), withDoctype: true);
   });
 
   router.get('/about', (Request request) {
