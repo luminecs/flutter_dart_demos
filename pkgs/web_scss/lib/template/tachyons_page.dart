@@ -36,6 +36,27 @@ do what you love
 do what you love
 </button>
 
+<div class='ml7 mt5 mb4 f4'>
+  <button class='bw0 br2 white bg-blue-6 px2 py3 fw1 tc ttu tracked'>
+    Click
+  </button>
+</div>
+
+<pre>
+  lumine@fedora:~&#36; mise ls
+  Plugin   Version        Config Source              Requested    
+  flutter  3.19.0-stable  ~/.config/mise/config.toml 3.19.0-stable
+  flutter  3.22.1-stable                                          
+  flutter  3.22.2-stable                                          
+  node     12.22.12                                               
+  node     14.21.3                                                
+  node     15.14.0                                                
+  node     16.20.2                                                
+  node     21.7.3                                                 
+  node     22.1.0         ~/.tool-versions           22.1.0       
+  ruby     3.1.3          ~/.config/mise/config.toml 3.1.3 
+</pre>
+
 </body>
 </html>
 """;
